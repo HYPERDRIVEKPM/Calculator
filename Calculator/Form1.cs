@@ -67,8 +67,9 @@ namespace Calculator
                 {
                     Number2 = Convert.ToDouble(Number.ToString());
                     Result = Number1 / Number2;
+                    screen.Clear();
                     screen.Append($"{Number1} / {Number2} = {Result}");
-                    screentxtbox.Text = Result.ToString();
+                    screentxtbox.Text = screen.ToString();
                 }
             }
         }
